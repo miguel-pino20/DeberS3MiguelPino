@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberS2MiguelPino9noB.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Deber Semana 3 Miguel Pino" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Usuario" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Contraseña" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtcontrasena" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+                <Button x:Name="btnIngreso" Text="Ingresar" Clicked="btnIngreso_Clicked" Grid.Row="2" Grid.ColumnSpan="2"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
